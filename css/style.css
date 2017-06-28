@@ -63,6 +63,10 @@ hr {
   display: none;
 }
 
+#cover img {
+  width: 100%;
+}
+
 .buy {
   position: fixed;
     left: 20px;
