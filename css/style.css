@@ -5,13 +5,18 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: #111 url('../images/texture.png') top center;
   height: 100%;
+  min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: grayscale;
   line-height: 1.4;
   font-family: sans-serif;
-  background: #fffd50;
-  background-size: cover;
+  font-size: 9pt;
+  font-family: 'Helvetica';
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 700;
 }
 
 hr {
@@ -23,84 +28,67 @@ hr {
     padding: 0;
 }
 
-#bg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 60%;
-  background: url('../images/bg.jpg') center center;
-  background-size: cover;
-  height: 100%;
-  min-height: 100%;
-}
-
-#title {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-}
-
-#front {
-  position: fixed;
-  right: 50%;
-  transform: translateY(50%);
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  z-index: 12;
-}
-
-#words {
-  position: fixed;
-  width: 100%;
-  bottom: 15px;
-  z-index: 15;
+header {
   text-align: center;
+  padding: 50px 20px 20px 20px;
+  line-height: 1.4;
+  margin-bottom: 50px 0;
 }
 
-#cover {
-  width: calc(100% - 20px);
-  margin: 10px auto;
-  display: none;
+.head {
+      font-size: 12pt;
+    letter-spacing: 10px;
 }
 
-#cover img {
-  width: 100%;
+span {
+  background: #111;
 }
 
-.buy {
-  position: fixed;
-    left: 20px;
-    bottom: 20px;
-  z-index: 20;
-  font-size: 24pt;
-  width: 100%;
-}
-
-.buy a {
+.icons a {
+  color: #fff;
+  background: #111;
   margin-right: 10px;
+  display: inline-block;
+  padding: 10px;
+  /*border: 2px solid #fff;*/
+  text-decoration: none !important;
 }
 
+.icons a:hover {
+  background: #fff;
+  color: #111;
+}
+
+.icons {
+  font-size: 12pt;
+  margin: 10px 0;
+}
+
+section {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+section .box {
+  display: inline-block;
+  width: calc(50% - 10px);
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  margin: 10px 0;
+}
+
+footer {
+
+}
 
 
 /*mobile styles*/
-@media (max-width: 728px) {
-  html, body {
-    background: #fff;
-    min-height: 100%;
-    text-align: center;
-  }
-
-  #front, #words, #title, #bg {
-    display: none;
-  }
-
-  #cover {
-    display: block;
-  }
-
-  .buy {
-    text-align: center;
-    left: 0;
-    bottom: 15px;
+@media (max-width: 600px) {
+  .box {
+    width: 100% !important;
   }
 }

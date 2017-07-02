@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  if($(window).width() > 768) {
-  	pivot.init({ selector: '#front-img', perspective: 500 });	
-  } 
+  
+
+  var year = new Date().getFullYear()
+  $('.js-copy-year').html(year)
 })

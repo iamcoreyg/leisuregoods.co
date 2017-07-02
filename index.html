@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sham1016</title>
+  <title>Client Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=""/>
   <meta property="og:title" content="">
@@ -16,45 +16,92 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-grid.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/utility.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css" />
 
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--imports-->
+  <!-- <link href="//fonts.googleapis.com/css?family=####" rel="stylesheet"> -->
 </head>
-<body>
+<body id="body">
 
-<a href="https://soundcloud.com/sham1016/hood-rat" id="cover" target="_blank">
-  <img src="images/hoodrat-cover.jpg" />
-</a>
+<header>
+<span class="head">LEISURE GOODS</span>
+<br />
+<span class="small">Creative Collective + LA Record Label
+</header>
 
-<img src="images/hoodrat.png" id="title" />
-<div id="front">
-  <a href="https://soundcloud.com/sham1016/hood-rat" target="_blank">
-    <img src="images/front-pic.png" id="front-img"/>
-  </a>
-</div>
+<section>
+  <div class="box">
+    <span class="artist">Miles Blaq</span> <br />
+    
+    <div class="icons">
+      <a href="http://instagram.com/milesblaq"><i class="fa fa-instagram"></i></a>
+      <a href="http://twitter.com/milesblaq"><i class="fa fa-twitter"></i></a>
+      <a href="http://facebook.com/milesblaq"><i class="fa fa-facebook"></i></a>
+      <a href="http://soundcloud.com/milesblaq"><i class="fa fa-soundcloud"></i></a>
+    </div>
+    
+    <a href="#"><img src="images/tone.jpg" /></a>
+    <div style="height: 20px">Soon come.</div>
 
-<div id="bg"></div>
-<div id="words"><img src="images/bottom.png" /></div>
+    <div class="icons" style="">
+      -<a href="#"><i class="fa fa-apple"></i></a>
+      <a href="#"><i class="fa fa-spotify"></i></a>
+      <a href="#"><i class="fa fa-google"></i></a>
+      <a href="#"><i class="fa fa-soundcloud"></i></a>
+    </div>
+  </div>
 
-<div class="buy">
-  <iframe width="200" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/330487758&amp;color=ff5500&amp;inverse=false&amp;auto_play=true&amp;show_user=true"></iframe>
-  <br />
-  <a href="https://itunes.apple.com/us/album/hood-rat-single/id1253561883" target="_blank"><i class="fa fa-apple"></i></a>
-  <!-- <a href="#" target="_blank"><i class="fa fa-spotify"></i></a> -->
-  <a href="https://soundcloud.com/sham1016/hood-rat" target="_blank"><i class="fa fa-soundcloud"></i></a>
-  <!-- <a href="#" target="_blank"><i class="fa fa-google"></i></a> -->
-</div>
+  <div class="box">
+    <span class="artist">Sham1016</span> <br />
+
+    <div class="icons">
+      <a href="https://www.instagram.com/sham1016/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://twitter.com/KAS_VonSham" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.soundcloud.com/sham1016/" target="_blank"><i class="fa fa-soundcloud"></i></a>
+    </div>
+    
+    <a href="https://itunes.apple.com/us/album/hood-rat-single/id1253561883" target="_blank"><img src="images/hoodrat.jpg" /></a>
+    <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/330487758&amp;color=ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>
+    <div class="icons">
+      <a href="#"><i class="fa fa-apple"></i></a>
+      <a href="#"><i class="fa fa-spotify"></i></a>
+      <a href="#"><i class="fa fa-google"></i></a>
+      <a href="#"><i class="fa fa-soundcloud"></i></a>
+    </div>
+  </div>
+</section>
 
 <script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/pivot.js"></script>
 <script src="js/script.js"></script>
 <script>
-  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  //
-  // ga('create', 'UA-XXXXXX', 'auto');
-  // ga('send', 'pageview');
+  document.addEventListener('mousemove', function (event) {
+// You will need to replace every instance of elementid with what ever id you have chosen.
+ 
+  // This takes care of IE...just in case some one is still using it.
+  if (window.event) { 
+    event = window.event;
+  }
+ 
+  // Gets the position of your mouse
+  var mousepositonx = event.clientX;
+  var mousepositony = event.clientY;
+ 
+  //Gets the element id of the element the background image is applied to
+  var elementid = document.getElementById('body');
+ 
+  //Sets the background position to chage based on the mouse position
+  elementid.style.backgroundPositionX = mousepositonx/14 + 'px';
+  elementid.style.backgroundPositionY = mousepositony/14 + 'px';
+ 
+}, false);
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101974276-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 </body>
 </html>
