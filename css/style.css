@@ -5,7 +5,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #111 url('../images/texture.png') top center;
+  background: #fff;
   height: 100%;
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
@@ -15,8 +15,7 @@ html, body {
   font-size: 9pt;
   font-family: 'Helvetica';
   letter-spacing: 1px;
-  color: #fff;
-  font-weight: 700;
+  color: #111;
 }
 
 hr {
@@ -36,27 +35,29 @@ header {
 }
 
 .head {
-      font-size: 12pt;
-    letter-spacing: 10px;
-}
-
-span {
-  background: #111;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    width: 100px;
+    height: 100px;
+    background: #18181b;
+    padding: 9px;
+    margin: auto;
+    color: #fff;
+    text-align: -webkit-left;
+    display: block;
+    font-family: 'Shrikhand';
 }
 
 .icons a {
-  color: #fff;
-  background: #111;
+  color: #111;
   margin-right: 10px;
   display: inline-block;
   padding: 10px;
-  /*border: 2px solid #fff;*/
   text-decoration: none !important;
 }
 
 .icons a:hover {
-  background: #fff;
-  color: #111;
+  color: #ccc;
 }
 
 .icons {
@@ -72,13 +73,19 @@ section {
 
 section .box {
   display: inline-block;
-  width: calc(50% - 10px);
+  width: calc(33% - 10px);
   padding: 10px;
+  text-align: center;
 }
 
 img {
   max-width: 100%;
   margin: 10px 0;
+}
+
+.artist-box {
+  width: calc(50% - 10px);
+  display: inline-block;
 }
 
 footer {
